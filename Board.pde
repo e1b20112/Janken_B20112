@@ -4,24 +4,12 @@ class Board {
     PImage gu = loadImage("gu.png");
     PImage choki = loadImage("choki.png");
     PImage pa = loadImage("pa.png");
+
     image(gu, 0, 0, 150, 150);
     image(choki, 150, 0, 150, 150);
     image(pa, 300, 0, 150, 150);
   }
 
-<<<<<<< HEAD
-void updateCommentArea(String comment){
- fill(#000000);
- rect(0,150,450,75);
- fill(#FFFFFF);
- textSize(30);
- textAlign(CENTER);
- text(comment, 225, 180);
- textSize(20);
- String scoreMessage = "Score:"+game.score;
- text(scoreMessage, 225, 200);
-}
-=======
   void updateCommentArea(String comment){
     fill(#000000);
     rect(0,150,450,75);
@@ -30,10 +18,9 @@ void updateCommentArea(String comment){
     textAlign(CENTER);
     text(comment, 225, 180);
     textSize(20);
-    String scoreMessage = "Win:"+game.win+" Draw:"+game.draw+ " Lose:"+game.lose;
+    String scoreMessage = "Score:"+game.score + " Win:"+game.win+" Draw:"+game.draw+ " Lose:"+game.lose;
     text(scoreMessage, 225, 200);
   }
->>>>>>> add_game_result_display
 
   void updateResultArea(String result) {
     fill(#000000);
