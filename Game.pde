@@ -1,22 +1,40 @@
 class Game {
+<<<<<<< HEAD
 int score=0;
+=======
+int win=0;
+int draw=0;
+int lose=0;
+>>>>>>> add_game_result_display
 String getJankenResult(String hand) {
  String cpuHand = this.desideCpuHand();
 
  if (hand.equals("Gu") && cpuHand.equals("Gu") 
    || hand.equals("Choki") && cpuHand.equals("Choki") 
    || hand.equals("Pa") && cpuHand.equals("Pa")) {
+<<<<<<< HEAD
      score++;
+=======
+     draw++;
+>>>>>>> add_game_result_display
      return "Draw";
    }else if (hand.equals("Gu") && cpuHand.equals("Choki")
    || hand.equals("Choki") && cpuHand.equals("Pa")
    || hand.equals("Pa") && cpuHand.equals("Gu")) {
+<<<<<<< HEAD
      score = score + 2;
+=======
+     win++;
+>>>>>>> add_game_result_display
      return "You Win!";
    }else if (hand.equals("Gu") && cpuHand.equals("Pa")
    || hand.equals("Choki") && cpuHand.equals("Gu")
    || hand.equals("Pa") && cpuHand.equals("Choki")) {
+<<<<<<< HEAD
      score--;
+=======
+     lose++;
+>>>>>>> add_game_result_display
      return "CPU Win!";
    }
 
